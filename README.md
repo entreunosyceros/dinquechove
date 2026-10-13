@@ -1,10 +1,10 @@
-# Open-Meteo — práctica de consultas y gráficos
+# dinquechove
 
 <p align="center">
 <img width="644" height="537" alt="image_e25810ec_sinfondo" src="https://github.com/user-attachments/assets/313794d3-63b9-4897-9ab0-49842b5ce04c" />
 </p>
 
-Programa en Python para consultar la [API Open-Meteo](https://open-meteo.com/en/docs) **sin clave API** (tier gratuito para uso no comercial). Permite practicar parámetros de consulta, geocodificación de lugares y visualización de series temporales.
+**dinquechove** es un programa en Python para consultar la [API Open-Meteo](https://open-meteo.com/en/docs) **sin clave API** (tier gratuito para uso no comercial). Permite practicar parámetros de consulta, geocodificación de lugares y visualización de series temporales.
 
 ## Requisitos
 
@@ -12,7 +12,8 @@ Programa en Python para consultar la [API Open-Meteo](https://open-meteo.com/en/
 - Dependencias en `requirements.txt`
 
 ```bash
-cd /media/entreunosyceros/COP.SEGURIDAD/PROGRAMAS/PYTHON/OpenMeteo
+git clone <url-del-repositorio> dinquechove
+cd dinquechove
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -67,9 +68,9 @@ Lista completa de parámetros: [documentación oficial](https://open-meteo.com/e
 
 | Módulo | Descripción |
 |--------|-------------|
-| `open_meteo/client.py` | HTTP, geocodificación y construcción de URLs |
-| `open_meteo/variables.py` | Presets y etiquetas en español |
-| `open_meteo/charts.py` | Gráficos con Matplotlib |
+| `dinquechove/client.py` | HTTP, geocodificación y construcción de URLs |
+| `dinquechove/variables.py` | Presets y etiquetas en español |
+| `dinquechove/charts.py` | Gráficos con Matplotlib |
 | `main.py` | CLI principal |
 
 ## Uso desde código
@@ -79,7 +80,7 @@ Lista completa de parámetros: [documentación oficial](https://open-meteo.com/e
 </p>
 
 ```python
-from open_meteo import ClienteOpenMeteo
+from dinquechove import ClienteOpenMeteo
 
 cliente = ClienteOpenMeteo()
 datos = cliente.obtener_prevision(

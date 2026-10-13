@@ -56,7 +56,7 @@ class ClienteOpenMeteo:
         self.tiempo_espera = tiempo_espera
         self._sesion = requests.Session()
         self._sesion.headers.update(
-            {"User-Agent": "OpenMeteo-Python-Practice/1.0 (educational)"}
+            {"User-Agent": "dinquechove/1.0 (https://github.com)"}
         )
 
     def buscar_lugar(self, nombre: str, cantidad: int = 5) -> list[ResultadoGeocodificacion]:

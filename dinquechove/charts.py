@@ -8,8 +8,8 @@ from typing import Any
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 
-from open_meteo.fechas import formato_eje_grafico, parsear_marca_tiempo
-from open_meteo.variables import etiqueta_de_variable
+from dinquechove.fechas import formato_eje_grafico, parsear_marca_tiempo
+from dinquechove.variables import etiqueta_de_variable
 
 
 def _analizar_marcas_tiempo(marcas: list[str]) -> list:
@@ -95,7 +95,7 @@ def graficar_series(
         figura.suptitle(titulo, fontsize=13, y=0.995)
     else:
         zona = datos.get("timezone", "")
-        figura.suptitle(f"Open-Meteo — {seccion} ({zona})", fontsize=13, y=0.995)
+        figura.suptitle(f"dinquechove — {seccion} ({zona})", fontsize=13, y=0.995)
 
     # Espacio vertical extra: cada subgráfico muestra sus propias fechas en el eje X.
     figura.subplots_adjust(left=0.1, right=0.98, top=0.93, bottom=0.06, hspace=0.62)

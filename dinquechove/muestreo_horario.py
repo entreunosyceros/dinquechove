@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from open_meteo.fechas import parsear_marca_tiempo
+from dinquechove.fechas import parsear_marca_tiempo
 
 # Cuatro horas por franja del día (hora local de la respuesta de Open-Meteo).
 FRANJAS_DEL_DIA: tuple[tuple[str, tuple[int, ...]], ...] = (

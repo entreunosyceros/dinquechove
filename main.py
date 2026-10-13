@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Consultas interactivas a Open-Meteo (sin API key, uso no comercial).
+dinquechove — consultas a Open-Meteo (sin API key, uso no comercial).
 
 Documentación: https://open-meteo.com/en/docs
 Geocodificación: https://open-meteo.com/en/docs/geocoding-api
@@ -13,13 +13,13 @@ import json
 import sys
 from pathlib import Path
 
-from open_meteo.charts import graficar_series
-from open_meteo.client import ClienteOpenMeteo, ErrorOpenMeteo
-from open_meteo.fechas import formatear_marca_tiempo, parsear_marca_tiempo
-from open_meteo.muestreo_horario import seleccionar_filas_horarias
-from open_meteo.nombres_archivo import construir_ruta_grafico
-from open_meteo.tablas import imprimir_tabla
-from open_meteo.variables import (
+from dinquechove.charts import graficar_series
+from dinquechove.client import ClienteOpenMeteo, ErrorOpenMeteo
+from dinquechove.fechas import formatear_marca_tiempo, parsear_marca_tiempo
+from dinquechove.muestreo_horario import seleccionar_filas_horarias
+from dinquechove.nombres_archivo import construir_ruta_grafico
+from dinquechove.tablas import imprimir_tabla
+from dinquechove.variables import (
     CODIGOS_TIEMPO_ES,
     PRESETS_DIARIOS,
     PRESETS_HORARIOS,
@@ -306,7 +306,7 @@ def ejecutar_programa(argumentos: argparse.Namespace) -> int:
 def crear_parser() -> argparse.ArgumentParser:
     """Define los argumentos de línea de comandos (nombres y ayuda en español)."""
     parser = argparse.ArgumentParser(
-        description="Consultas a Open-Meteo sin clave (uso no comercial).",
+        description="dinquechove: consultas a Open-Meteo sin clave (uso no comercial).",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     parser.add_argument(
