@@ -1,0 +1,10 @@
+# Entorno virtual
+.venv/
+
+# cachés de Python
+__pycache__/
+
+# Salidas generadas por el programa (gráficos y exportaciones)
+*_diario.png
+*_horario.png
+datos.json
