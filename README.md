@@ -1,5 +1,9 @@
 # Open-Meteo — práctica de consultas y gráficos
 
+<p align="center">
+<img width="644" height="537" alt="image_e25810ec_sinfondo" src="https://github.com/user-attachments/assets/313794d3-63b9-4897-9ab0-49842b5ce04c" />
+</p>
+
 Programa en Python para consultar la [API Open-Meteo](https://open-meteo.com/en/docs) **sin clave API** (tier gratuito para uso no comercial). Permite practicar parámetros de consulta, geocodificación de lugares y visualización de series temporales.
 
 ## Requisitos
@@ -69,6 +73,10 @@ Lista completa de parámetros: [documentación oficial](https://open-meteo.com/e
 | `main.py` | CLI principal |
 
 ## Uso desde código
+
+<p align="center">
+<img width="1890" height="909" alt="dinquechove" src="https://github.com/user-attachments/assets/dbd50717-5cfa-477e-a9f2-8c681a0805d2" />
+</p>
 
 ```python
 from open_meteo import ClienteOpenMeteo
